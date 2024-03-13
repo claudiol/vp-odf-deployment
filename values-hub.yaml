@@ -6,6 +6,7 @@ clusterGroup:
     - vault
     - golang-external-secrets
     - openshift-storage
+    - policies
   subscriptions:
     acm:
       name: advanced-cluster-management

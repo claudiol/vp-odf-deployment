@@ -33,7 +33,7 @@ odf:
   
   toolbox:
     name: ocsinit
-    enableCephTools: true
+    enableCephTools: false
   
   #Define the odf storageSystem parameters
   storageSystem:

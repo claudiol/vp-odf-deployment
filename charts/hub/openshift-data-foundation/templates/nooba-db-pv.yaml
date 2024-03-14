@@ -16,5 +16,5 @@ spec:
   accessModes:
     - ReadWriteOnce
   persistentVolumeReclaimPolicy: Delete
-  storageClassName: gp3-csi
+  storageClassName: ocs-storagecluster-cephfs
   volumeMode: Filesystem

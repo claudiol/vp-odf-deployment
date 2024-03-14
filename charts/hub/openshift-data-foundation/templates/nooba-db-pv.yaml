@@ -1,0 +1,23 @@
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: pvc-db-noobaa-db-pg
+  annotations:
+    pv.kubernetes.io/provisioned-by: ebs.csi.aws.com
+spec:
+  capacity:
+    storage: 100Gi
+  csi:
+    driver: ebs.csi.aws.com
+    volumeHandle: vol-
+    fsType: ext4
+  accessModes:
+    - ReadWriteOnce
+  claimRef:
+    kind: PersistentVolumeClaim
+    namespace: openshift-storage
+    name: db-noobaa-db-pg-0
+    apiVersion: v1
+  persistentVolumeReclaimPolicy: Delete
+  storageClassName: gp3-csi
+  volumeMode: Filesystem

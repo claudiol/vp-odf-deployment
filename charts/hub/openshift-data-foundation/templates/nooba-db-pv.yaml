@@ -1,7 +1,7 @@
 kind: PersistentVolume
 apiVersion: v1
 metadata:
-  name: pvc-db-noobaa-db-pg
+  name: vol-db-noobaa-db-pg-0
   annotations:
     pv.kubernetes.io/provisioned-by: ebs.csi.aws.com
 spec:

@@ -65,7 +65,7 @@ clusterGroup:
       name: storage
       namespace: openshift-storage
       project: hub
-      path: charts/hub/openshift-data-foundation
+      path: charts/hub/openshift-data-foundations
   imperative: {}
     # NOTE: We *must* use lists and not hashes. As hashes lose ordering once parsed by helm
     # The default schedule is every 10 minutes: imperative.schedule
